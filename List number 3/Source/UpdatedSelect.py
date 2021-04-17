@@ -5,8 +5,7 @@ def Select2(A,i,comp,chan):
     changes = chan
     
     arr_of_x = [A[i:i+checker] for i in range(0,len(A),checker)]
-    #sorted_arr = [sorted(el) for el in arr_of_x]
-   
+    
     for el in arr_of_x:
         compIns,chanIns = insertionSort(el)
         comparing += compIns
@@ -19,8 +18,6 @@ def Select2(A,i,comp,chan):
         pivot = sorted(medians_arr)[len(medians_arr) // 2]
     else:
         pivot,compar1,chang1 = Select2(medians_arr,len(medians_arr) // 2,comparing,changes)
-       # comparing +=compar1
-        #changes +=chang1
         
     p,comp2,chang2 = partition(A, pivot)
     comparing += comp2
@@ -76,10 +73,4 @@ def insertionSort(array):
         
     return comparing,changes  
 
-#%%
-np.random.seed(10)
-A = np.random.randint(0,100,100)
-print(A)
-checker = 5
-print(Select2(A,9,0,0))
-print(A)
+
