@@ -1,6 +1,6 @@
 Implemenetion of some basic selection algorithms for coruse Algorithms and Data Structures.
 
-RandomSelect - randomized select algorithm. Pivot picks random numbers from array.
+RandomSelect - randomized select algorithm. Pivot in partition method is random number from array.
 
 Select - median-of-medians algorithm. We recursively we find median-of-medians and assign it as pivot. In this case w split input array modulo 5.
 
