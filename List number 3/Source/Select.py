@@ -5,12 +5,12 @@ def Select(A,i,comp,chan):
     changes=chan
     
     arr_of_5 = [A[i:i+5] for i in range(0,len(A),5)]
-    #sorted_arr = [sorted(el) for el in arr_of_5]
+
     for el in arr_of_5:
         compIns,chanIns = insertionSort(el)
         comparing += compIns
         changes += chanIns
-        #print(comparing,changes)
+
         
     sorted_arr = [x for x in arr_of_5]
     medians_arr = [el[len(el)//2] for el in sorted_arr]
@@ -19,9 +19,7 @@ def Select(A,i,comp,chan):
         pivot = sorted(medians_arr)[len(medians_arr) // 2]
     else:
         pivot,compare1,change1 = Select(medians_arr,len(medians_arr) // 2,comparing,changes)
-        #comparing +=compare1
-        #changes += change1
-        #print(comparing,changes)
+
     
     p,compare,change = partition(A, pivot)
     comparing +=compare
@@ -79,11 +77,3 @@ def insertionSort(array):
         
     return comparing,changes  
 
-
-
-
-
-#%%
-A = [*range(100,0,-1)]
-print(A)
-Select(A,9,0,0)
