@@ -24,7 +24,7 @@ def random_select(A,p,q,i,comp,chan):
     
 
 def partitionrand(arr , start, stop):
-    #Seed
+
     randpivot = np.random.randint(start, stop)
     arr[start], arr[randpivot] = arr[randpivot], arr[start]
     
@@ -45,11 +45,8 @@ def partition(arr,start,stop):
             i = i + 1
     arr[pivot] , arr[i - 1] = arr[i - 1] , arr[pivot]
     changes +=2
-    changes +=2 #Rand
+    changes +=2 #partitionrand
     pivot = i - 1
     return pivot,comparing,changes
                
       
-#%%
-A = [*range(100,0,-1)]
-print(random_select(A, 0, len(A)-1, 0,0,0))
