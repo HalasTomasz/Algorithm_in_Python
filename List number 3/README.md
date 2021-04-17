@@ -8,4 +8,4 @@ UpdatedSelect - median-of-medians algorithm, but contrarily to upper Select file
 
 BstSearch - searching through sorted array recursively using the same technic as is implemented in BST Search. Retunrs 0 if element isn't in array or 1 if it is.
 
-Every implemented algorithm retunrs a number of comparison and swaps between elements
+Every implemented algorithm returns a number of comparison and swaps between elements
