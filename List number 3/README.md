@@ -1,11 +1,13 @@
-Implemenetion of some basic selection algorithms for coruse Algorithms and Data Structures.
+List number 3
 
-RandomSelect - randomized select algorithm. Pivot in partition method is random number from array.
+Implemenetion of some basic selection algorithms for coruse Algorithms and Data Structures:
 
-Select - median-of-medians algorithm. We recursively we find median-of-medians and assign it as pivot. In this case w split input array modulo 5.
+- RandomSelect as randomized select algorithm. Pivot in partition method is randomly choosen from array.
 
-UpdatedSelect - median-of-medians algorithm, but contrarily to upper Select file, we recursively we split input array modulo n. 
+- Select as median-of-medians algorithm. We recursively we find median-of-medians and assign it as pivot. In this case w split input array modulo 5.
 
-BstSearch - searching through sorted array recursively using the same technic as is implemented in BST Search. Retunrs 0 if element isn't in array or 1 if it is.
+- UpdatedSelect as median-of-medians algorithm, but contrarily to upper Select file, we recursively we split input array modulo n. 
+
+- BstSearch - searching through sorted array recursively using the same technic as is implemented in BST Search. Returns 0 if element isn't in array or 1 if it is.
 
 Every implemented algorithm returns a number of comparison and swaps between elements
