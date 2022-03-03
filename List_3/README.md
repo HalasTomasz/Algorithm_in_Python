@@ -1,6 +1,6 @@
 List number 3
 
-Implemenetion of some basic selection algorithms for coruse Algorithms and Data Structures:
+Implemenetion of some basic selection algorithms during coruse Algorithms and Data Structures:
 
 - RandomSelect as randomized select algorithm. Pivot in partition method is randomly choosen from array.
 
